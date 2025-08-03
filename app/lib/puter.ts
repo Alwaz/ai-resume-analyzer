@@ -244,6 +244,7 @@ export const usePuterStore = create<PuterStore>((set, get) => {
   const init = (): void => {
     const puter = getPuter();
     if (puter) {
+      console.log("puter initialized....");
       set({ puterReady: true });
       checkAuthStatus();
       return;
